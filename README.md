@@ -35,60 +35,27 @@ My second step is to decide on what I wanted to demonstrate and achieve in this 
             
 
 
+#### Object design of the Simulation (Breakdown of the problem)
+
+I've taken a top down apporach to break down the problem.
+
+Simulator - A class to let the user input the toy robot command.
+Robot -  A simulation of the toy robot
+Commander - A class responsible to convert the user input to toy robot command object
+Command - Storing the user's command attributes
+Table - A simulation of the 5x5 grid table
+Compass - A simulation of a actual physical compass. Used for directions NORTH, EAST, SOUTH and WEST
+
+#### Conclusion
 
 
-
-
-
-
-How to the shuffle playlist endpoint
-
-After careful consideration, I've choosen data storage with PostgreSQL and test suite with Mini Test.
+After careful consideration, I've choosen test suite with Mini Test.
 
 This is because is something easy to set up and get it running due to this challenge limited time constraint.
 
-Alternatively might consider using Redis as an intermediate storage. Eg storing what songs has the user played.
+I've used Rubocop gem to enforce Ruby Style Guide standard to the code.
 
-Redis allows us to store and query data in a fast and efficient way. This is because Redis is an in-memory database which operates in RAM memory.
-
-Most importantly Redis is an external database source so it can share across multiple servers.
-
-I've added test specs that test the PlayListSerivce class.
-
-And also I've used Rubocop gem to enforce Ruby Style Guide standard to the code.
-
-Improvements
-Could have extracted the code to a Gem
-
-Could have added more test cases
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Overall I'm happy what I've done in this challenge in this 3 hour slot. 
 
 
 # Toy Robot
