@@ -1,23 +1,23 @@
-# Zilla Toy Robot
+# Toy Robot
 
 
 
 
-##Ruby
+## Ruby
 It is written in Ruby 2.7.3
 
-##Dependencies
+## Dependencies
 Ruby
 
-##Test suite
+## Test suite
 Minitest
 
-##How to run the MiniTest Test suite
+## How to run the MiniTest Test suite
 rake test
 
 ##The Challenge
 
-##Approach to the Toy robot problem 
+## Approach to the Toy robot problem 
 
 My first approach of the problem. 
 
@@ -27,7 +27,7 @@ So I've given myself a time limit of no longer than 3 hours to complete this cha
 
 My second step is to decide on what I wanted to demonstrate and achieve in this challenge.
 
-###Objectives:              
+### Objectives:              
              Object-oriented 
              Readability - Easy to read and understand
              Clean code - Will be using Rubocop to enforce the ruby coding layout and standard
@@ -47,7 +47,6 @@ Table - A simulation of the 5x5 grid table
 Compass - A simulation of a actual physical compass. Used for directions NORTH, EAST, SOUTH and WEST
 
 #### Conclusion
-
 
 After careful consideration, I've choosen test suite with Mini Test.
 
