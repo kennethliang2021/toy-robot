@@ -30,10 +30,12 @@ So I've given myself a time limit of no longer than 3 hours to complete this cha
 My second step is to decide on what I wanted to demonstrate and achieve in this challenge.
 
 ### Objectives:              
-             Object-oriented 
-             Readability - Easy to read and understand
-             Clean code - Will be using Rubocop to enforce the ruby coding layout and standard
-             Easy to modify by making the code DRY.
+ 
+ 
+ Object-oriented 
+ Readability - Easy to read and understand
+ Clean code - Will be using Rubocop to enforce the ruby coding layout and standard
+ Easy to modify by making the code DRY.
             
 
 
@@ -42,10 +44,15 @@ My second step is to decide on what I wanted to demonstrate and achieve in this 
 I've taken a top down apporach to break down the problem.
 
 Simulator - A class to let the user input the toy robot command.
+
 Robot -  A simulation of the toy robot
+
 Commander - A class responsible to convert the user input to toy robot command object
+
 Command - Storing the user's command attributes
+
 Table - A simulation of the 5x5 grid table
+
 Compass - A simulation of a actual physical compass. Used for directions NORTH, EAST, SOUTH and WEST
 
 #### Conclusion
