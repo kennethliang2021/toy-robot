@@ -72,6 +72,13 @@ I've used Rubocop gem to enforce Ruby Style Guide standard to the code.
 
 Overall I'm happy what I've done in this challenge in this 3 hour slot. 
 
+### Improvements
+
+GUI part - Displaying meaningful messages and User friendly Prompts for the user command input.
+
+Command object might be an overkill for this challenge. Can be replaced with a Struct to bundle the command's attributes together.
+
+If this wasn't a code challenge exercise. Introducing Command design pattern to handle the command logic might be a option to look into.
 
 # Toy Robot
 
