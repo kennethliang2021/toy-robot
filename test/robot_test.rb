@@ -17,7 +17,7 @@ class RobotTest < Minitest::Test
   end
 
   def test_place
-    command = Command.new(type: :place, x: 0, y: 4, direction: :east)
+    command = Command.new(type: :place, x_pos: 0, y_pos: 4, direction: :east)
     @robot.execute(command: command)
     assert_equal '0,4,EAST', @robot.report
   end
@@ -51,7 +51,7 @@ class RobotTest < Minitest::Test
   end
 
   def test_out_of_bounds_value
-    command = Command.new(type: :place, x: 0, y: 4, direction: :north)
+    command = Command.new(type: :place, x_pos: 0, y_pos: 4, direction: :north)
     @robot.execute(command: command)
     command = Command.new(type: :move)
     @robot.execute(command: command)

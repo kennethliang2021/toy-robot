@@ -2,7 +2,7 @@ require_relative 'table'
 require_relative 'compass'
 require 'pry'
 
-COMMANDS = %i[place move left right report]
+COMMANDS = %i[place move left right report].freeze
 
 class Robot
   attr_reader :facing_direction, :position_x, :position_y, :table, :compass
@@ -16,16 +16,15 @@ class Robot
   end
 
   def execute(command:)
-      case command.type
-      when :place
-        if valid_place_command?(command: command)
-          place(x_pos: command.x, y_pos: command.y, direction: command.direction)
-        end
-      else
-        if valid_command_type?(command_type: command.type)
-          send(command.type)
-        end
-      end
+    case command.type
+    when :place
+      x = command.x_pos
+      y = command.y_pos
+      d = command.direction
+      place(x_pos: x, y_pos: y, direction: d) if valid_place_command?(command: command)
+    else
+      send(command.type) if valid_command_type?(command_type: command.type)
+    end
   end
 
   def report

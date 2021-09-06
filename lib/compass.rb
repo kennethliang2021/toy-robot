@@ -1,8 +1,6 @@
 DIRECTIONS = %i[north east south west].freeze
 
 class Compass
-
-
   def valid_direction?(direction:)
     DIRECTIONS.include?(direction)
   end

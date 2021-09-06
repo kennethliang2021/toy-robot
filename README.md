@@ -17,6 +17,13 @@ Minitest
 ```
 rake test
 ```
+
+## How to run the program
+
+```
+rake run
+```
+
 ## The Challenge
 
 ## Approach to the Toy robot problem 

@@ -1,16 +1,14 @@
-class Command 
-  attr_accessor :type, :x, :y, :direction
+class Command
+  attr_accessor :type, :x_pos, :y_pos, :direction
 
-  def initialize(type:, x: nil, y: nil, direction: nil)
+  def initialize(type:, x_pos: nil, y_pos: nil, direction: nil)
     @type = type
-    @x = x&.to_i
-    @y = y&.to_i
+    @x_pos = x_pos&.to_i
+    @y_pos = y_pos&.to_i
     @direction = direction&.to_sym
   end
 
   def values
-    [type, x, y, direction]
+    [type, x_pos, y_pos, direction]
   end
-
-
 end
