@@ -13,9 +13,11 @@ Ruby
 Minitest
 
 ## How to run the MiniTest Test suite
-rake test
 
-##The Challenge
+```
+rake test
+```
+## The Challenge
 
 ## Approach to the Toy robot problem 
 
